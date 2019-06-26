@@ -42,7 +42,11 @@ public class FilmFragment extends Fragment {
     private void showList(){
         data.addAll(Data.getListData());
         list.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+<<<<<<< HEAD
         ItemAdapter adapter = new ItemAdapter(getActivity());
+=======
+        ItemAdapter adapter = new ItemAdapter();
+>>>>>>> 00dbe77023b081ec2d43923c85413f8b3edb45ab
         adapter.setItems(data);
         list.setAdapter(adapter);
         adapter.notifyDataSetChanged();
