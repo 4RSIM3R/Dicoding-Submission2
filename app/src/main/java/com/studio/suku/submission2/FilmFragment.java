@@ -21,14 +21,9 @@ public class FilmFragment extends Fragment {
     private RecyclerView list;
     View v;
     private ArrayList<Item> data = new ArrayList<>();
+
     public FilmFragment() {
         // Required empty public constructor
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        data.addAll(Data.getListData());
-        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -45,9 +40,12 @@ public class FilmFragment extends Fragment {
 
 
     private void showList(){
+        data.addAll(Data.getListData());
         list.setLayoutManager(new GridLayoutManager(getActivity(), 2));
-        ItemAdapter adapter = new ItemAdapter();
+        ItemAdapter adapter = new ItemAdapter(getActivity());
+        adapter.setItems(data);
         list.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
 }

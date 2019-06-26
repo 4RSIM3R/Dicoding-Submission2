@@ -22,11 +22,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
         return items;
     }
 
-    public Context ItemAdapter(Context context){
-        return this.context = context;
+    public  ItemAdapter(Context context){
+
+        this.context = context;
     }
 
-    public void setPemains(ArrayList<Item> items){
+    public void setItems(ArrayList<Item> items){
         this.items = items;
     }
 
@@ -40,13 +41,18 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
 
-        Picasso.get().load(items.get(i).getPhoto());
+        Picasso.get().load(items.get(i).getPhoto()).into(myViewHolder.img);
 
     }
 
     @Override
     public int getItemCount() {
-        return getItems().size();
+        if (getItems() != null){
+            return getItems().size();
+        }
+        else {
+            return 0;
+        }
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
