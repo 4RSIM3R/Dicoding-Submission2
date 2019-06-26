@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">FilmQ</string>
+    <string name="tv_show">Tayangan Tv</string>
+    <string name="film">Film</string>
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleTab1">Film</string>
+    <string name="titleTab2">Acara Tv</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">FilmQ</string>
+    <string name="tv_show">Tv Show</string>
+    <string name="film">Film</string>
+    <string name="change_language_settings">Change Language Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleTab1">Film</string>
+    <string name="titleTab2">Tv Show</string>
+</resources>
